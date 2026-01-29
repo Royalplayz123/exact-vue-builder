@@ -125,31 +125,19 @@ const Header = () => {
               </button>
             </SheetTrigger>
             <SheetContent 
-              className="w-[320px] bg-background border-l border-border overflow-y-auto z-50 fixed inset-y-0 right-0"
-              style={{ top: 0, height: '100vh' }}
+              className="w-[320px] bg-background border-l border-border overflow-y-auto pt-4"
             >
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                    <Gamepad2 className="w-5 h-5 text-primary" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-foreground text-sm">WAMMUHOST</span>
-                    <span className="text-[10px] text-muted-foreground -mt-1">HOSTING REDEFINED</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2">
-                  <button 
-                    onClick={toggleTheme}
-                    className="p-2 rounded-lg hover:bg-secondary transition-colors"
-                  >
-                    {isDark ? (
-                      <Moon className="w-4 h-4 text-muted-foreground" />
-                    ) : (
-                      <Sun className="w-4 h-4 text-muted-foreground" />
-                    )}
-                  </button>
-                </div>
+              <div className="flex items-center justify-end gap-2 mb-4 pr-8">
+                <button 
+                  onClick={toggleTheme}
+                  className="p-2 rounded-lg hover:bg-secondary transition-colors"
+                >
+                  {isDark ? (
+                    <Moon className="w-4 h-4 text-muted-foreground" />
+                  ) : (
+                    <Sun className="w-4 h-4 text-muted-foreground" />
+                  )}
+                </button>
               </div>
 
               <nav className="space-y-2">
