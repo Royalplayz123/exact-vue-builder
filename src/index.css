@@ -2,95 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 230 20% 5%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 230 20% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 230 20% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 195 90% 60%;
+    --primary-foreground: 230 20% 5%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 230 20% 12%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 230 15% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 270 70% 60%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 230 20% 18%;
+    --input: 230 20% 18%;
+    --ring: 195 90% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Custom colors for WammuHost */
+    --cyan: 195 90% 60%;
+    --cyan-glow: 195 100% 70%;
+    --purple: 270 70% 60%;
+    --purple-dark: 270 60% 45%;
+    --green: 145 70% 50%;
+    --green-dark: 145 60% 40%;
+    
+    /* Gradients */
+    --gradient-purple: linear-gradient(135deg, hsl(270 70% 55%), hsl(290 70% 50%));
+    --gradient-green: linear-gradient(135deg, hsl(145 70% 45%), hsl(170 70% 50%));
+    --gradient-purple-glow: linear-gradient(135deg, hsl(270 80% 65%), hsl(290 80% 60%));
+    --gradient-card: linear-gradient(180deg, hsl(230 20% 10%) 0%, hsl(230 20% 6%) 100%);
+    
+    /* Shadows */
+    --shadow-glow-cyan: 0 0 20px hsl(195 90% 60% / 0.3);
+    --shadow-glow-purple: 0 0 30px hsl(270 70% 60% / 0.4);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 230 20% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 195 90% 60%;
+    --sidebar-primary-foreground: 230 20% 5%;
+    --sidebar-accent: 230 20% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 230 20% 18%;
+    --sidebar-ring: 195 90% 60%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 230 20% 5%;
     --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
+    --card: 230 20% 8%;
     --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
+    --popover: 230 20% 8%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
+    --primary: 195 90% 60%;
+    --primary-foreground: 230 20% 5%;
+    --secondary: 230 20% 12%;
     --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
+    --muted: 230 15% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 270 70% 60%;
     --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62% 30%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 230 20% 18%;
+    --input: 230 20% 18%;
+    --ring: 195 90% 60%;
   }
 }
 
@@ -99,7 +92,168 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-text-cyan {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(195 90% 60%), hsl(195 100% 70%));
+  }
+
+  .gradient-text-purple {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(270 70% 60%), hsl(290 70% 55%));
+  }
+
+  .btn-primary-gradient {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, hsl(270 70% 55%), hsl(290 70% 50%));
+  }
+
+  .btn-primary-gradient:hover {
+    box-shadow: 0 0 30px hsl(270 70% 60% / 0.5);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary-gradient {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, hsl(145 70% 45%), hsl(170 70% 50%));
+  }
+
+  .btn-secondary-gradient:hover {
+    box-shadow: 0 0 30px hsl(145 70% 50% / 0.5);
+    transform: translateY(-2px);
+  }
+
+  .feature-card {
+    @apply relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all duration-300;
+    background: linear-gradient(180deg, hsl(230 20% 10%) 0%, hsl(230 20% 7%) 100%);
+  }
+
+  .feature-card:hover {
+    @apply border-primary/50;
+    box-shadow: 0 0 30px hsl(195 90% 60% / 0.1);
+  }
+
+  .game-card {
+    @apply relative overflow-hidden rounded-xl border border-border transition-all duration-300 cursor-pointer;
+    background: linear-gradient(180deg, hsl(230 20% 10%) 0%, hsl(230 20% 6%) 100%);
+  }
+
+  .game-card:hover {
+    @apply border-primary/50;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px hsl(195 90% 60% / 0.15);
+  }
+
+  .section-badge {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-2 text-sm font-medium text-muted-foreground;
+  }
+
+  .icon-circle {
+    @apply flex h-14 w-14 items-center justify-center rounded-full;
+    background: linear-gradient(135deg, hsl(270 70% 55%), hsl(290 70% 50%));
+  }
+
+  .icon-circle-cyan {
+    @apply flex h-14 w-14 items-center justify-center rounded-full;
+    background: linear-gradient(135deg, hsl(195 90% 55%), hsl(195 100% 65%));
+  }
+
+  .faq-item {
+    @apply border border-border rounded-lg overflow-hidden transition-all duration-200;
+    background: linear-gradient(180deg, hsl(230 20% 9%) 0%, hsl(230 20% 7%) 100%);
+  }
+
+  .faq-item:hover {
+    @apply border-primary/30;
+  }
+
+  .mobile-menu-item {
+    @apply flex items-center gap-3 px-4 py-3 text-foreground hover:bg-secondary/50 transition-colors rounded-lg;
+  }
+
+  .footer-link {
+    @apply text-muted-foreground hover:text-primary transition-colors duration-200;
+  }
+
+  .cta-section {
+    @apply relative overflow-hidden rounded-2xl p-8 text-center;
+    background: linear-gradient(135deg, hsl(270 50% 25%) 0%, hsl(290 40% 20%) 100%);
+  }
+
+  .service-card {
+    @apply flex flex-col items-center gap-3 p-6 rounded-xl border border-border bg-card/50 transition-all duration-300;
+  }
+
+  .service-card:hover {
+    @apply border-primary/50 bg-card;
+  }
+}
+
+@layer utilities {
+  .text-glow-cyan {
+    text-shadow: 0 0 20px hsl(195 90% 60% / 0.5);
+  }
+
+  .text-glow-purple {
+    text-shadow: 0 0 20px hsl(270 70% 60% / 0.5);
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
 }
