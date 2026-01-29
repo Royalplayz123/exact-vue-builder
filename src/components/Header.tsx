@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Menu, X, Moon, Monitor, ChevronDown, ChevronUp, User, Gamepad2, Server, BookOpen, HelpCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Moon, Sun, ChevronDown, ChevronUp, User, Gamepad2, Server, BookOpen, HelpCircle } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
@@ -59,6 +59,29 @@ const menuItems = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openMenus, setOpenMenus] = useState<string[]>([]);
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    // Check initial theme
+    const isDarkMode = document.documentElement.classList.contains('dark') || 
+      !document.documentElement.classList.contains('light');
+    setIsDark(isDarkMode);
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
+    if (newIsDark) {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+    }
+  };
 
   const toggleMenu = (title: string) => {
     setOpenMenus(prev => 
@@ -69,7 +92,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -84,8 +107,15 @@ const Header = () => {
 
         {/* Right side */}
         <div className="flex items-center gap-3">
-          <button className="p-2 rounded-lg hover:bg-secondary transition-colors">
-            <Moon className="w-5 h-5 text-muted-foreground" />
+          <button 
+            onClick={toggleTheme}
+            className="p-2 rounded-lg hover:bg-secondary transition-colors"
+          >
+            {isDark ? (
+              <Moon className="w-5 h-5 text-muted-foreground" />
+            ) : (
+              <Sun className="w-5 h-5 text-muted-foreground" />
+            )}
           </button>
           
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -94,7 +124,10 @@ const Header = () => {
                 <Menu className="w-5 h-5 text-foreground" />
               </button>
             </SheetTrigger>
-            <SheetContent className="w-[320px] bg-background border-l border-border overflow-y-auto">
+            <SheetContent 
+              className="w-[320px] bg-background border-l border-border overflow-y-auto z-50 fixed inset-y-0 right-0"
+              style={{ top: 0, height: '100vh' }}
+            >
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -106,8 +139,15 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <button className="p-2 rounded-lg hover:bg-secondary transition-colors">
-                    <Moon className="w-4 h-4 text-muted-foreground" />
+                  <button 
+                    onClick={toggleTheme}
+                    className="p-2 rounded-lg hover:bg-secondary transition-colors"
+                  >
+                    {isDark ? (
+                      <Moon className="w-4 h-4 text-muted-foreground" />
+                    ) : (
+                      <Sun className="w-4 h-4 text-muted-foreground" />
+                    )}
                   </button>
                 </div>
               </div>
