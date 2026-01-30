@@ -79,7 +79,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-center text-muted-foreground text-xs">
-            Copyright 2025 © WammuHost. All rights reserved.
+            Copyright 2025 © Codenest Solution. All rights reserved.
           </p>
         </div>
       </div>

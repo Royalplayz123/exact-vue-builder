@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, ChevronDown, ChevronUp, User, Gamepad2, Server, BookOpen, HelpCircle } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { Link } from 'react-router-dom';
 
 const menuItems = [
   {
@@ -95,15 +96,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
             <Gamepad2 className="w-5 h-5 text-primary" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-foreground text-sm">WAMMUHOST</span>
-            <span className="text-[10px] text-muted-foreground -mt-1">HOSTING REDEFINED</span>
+            <span className="font-bold text-foreground text-sm">CODENEST</span>
+            <span className="text-[10px] text-muted-foreground -mt-1">SOLUTION</span>
           </div>
-        </div>
+        </Link>
 
         {/* Right side */}
         <div className="flex items-center gap-3">
@@ -125,9 +126,9 @@ const Header = () => {
               </button>
             </SheetTrigger>
             <SheetContent 
-              className="w-[320px] bg-background border-l border-border overflow-y-auto pt-4"
+              className="w-[320px] bg-background border-l border-border overflow-y-auto top-[57px] h-[calc(100%-57px)]"
             >
-              <div className="flex items-center justify-end gap-2 mb-4 pr-8">
+              <div className="flex items-center justify-end gap-2 mb-4 pr-8 pt-2">
                 <button 
                   onClick={toggleTheme}
                   className="p-2 rounded-lg hover:bg-secondary transition-colors"
@@ -206,7 +207,7 @@ const Header = () => {
               </div>
 
               <div className="mt-6 pt-4 border-t border-border text-center">
-                <p className="text-xs text-muted-foreground">© 2024 WammuHost</p>
+                <p className="text-xs text-muted-foreground">© 2025 Codenest Solution</p>
                 <p className="text-[10px] text-muted-foreground">Premium Game Server & VPS Hosting Solutions</p>
               </div>
             </SheetContent>
