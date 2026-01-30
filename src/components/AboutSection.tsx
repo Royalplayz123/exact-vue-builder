@@ -36,9 +36,9 @@ const AboutSection = () => {
           />
         </div>
 
-        {/* Why WammuHost Section */}
+        {/* Why Codenest Section */}
         <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
-          WHY WAMMUHOST?
+          WHY CODENEST?
         </h2>
 
         {/* Support Feature */}
@@ -91,7 +91,7 @@ const AboutSection = () => {
             TRUSTED HOST, MINECRAFT COMMUNITY APPROVED
           </h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Hundreds of members of the Minecraft community trust WammuHost to be their Minecraft server host—including some of the biggest modpack developers and content creators out there.
+            Hundreds of members of the Minecraft community trust Codenest Solution to be their Minecraft server host—including some of the biggest modpack developers and content creators out there.
           </p>
         </div>
       </div>

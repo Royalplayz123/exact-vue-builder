@@ -17,7 +17,7 @@ const BeyondGaming = () => {
         </h2>
         
         <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl mx-auto mb-10">
-          Wammuhosting offers more than just Minecraft hosting and gaming servers — We also have <span className="text-primary">Dedicated Servers</span> for VPS, Web, Discord Bots. With our unbeatable customer support and global reach, we can offer server hosting for any need.
+          Codenest Solution offers more than just Minecraft hosting and gaming servers — We also have <span className="text-primary">Dedicated Servers</span> for VPS, Web, Discord Bots. With our unbeatable customer support and global reach, we can offer server hosting for any need.
         </p>
 
         {/* Services Grid */}
