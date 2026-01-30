@@ -3,6 +3,10 @@ import { Check, Cpu, Zap, HardDrive, Server, Shield, MapPin, CircleDot } from 'l
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+// CPU Logos
+import intelLogo from '@/assets/intel-logo.png';
+import ryzenLogo from '@/assets/ryzen-logo.png';
+
 // Intel plan block images
 import oakBlock from '@/assets/blocks/oak.png';
 import birchBlock from '@/assets/blocks/birch.png';
@@ -124,7 +128,7 @@ const MinecraftPlans = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Intel_logo_%282006-2020%29.svg/1005px-Intel_logo_%282006-2020%29.svg.png" 
+                    src={intelLogo}
                     alt="Intel" 
                     className="h-12 object-contain brightness-0 invert opacity-80"
                   />
@@ -157,9 +161,9 @@ const MinecraftPlans = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Ryzen_Logo.svg/2560px-AMD_Ryzen_Logo.svg.png" 
+                    src={ryzenLogo}
                     alt="AMD Ryzen" 
-                    className="h-10 object-contain opacity-90"
+                    className="h-12 object-contain"
                   />
                   <span className="text-xs text-gray-400">Click to select</span>
                 </div>
