@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import minecraftImg from '@/assets/games/minecraft.jpg';
 import hytaleImg from '@/assets/games/hytale.jpg';
 import palworldImg from '@/assets/games/palworld.jpg';
@@ -9,15 +10,15 @@ import arkSurvivalImg from '@/assets/games/ark-survival.jpg';
 import arma3Img from '@/assets/games/arma3.jpg';
 
 const games = [
-  { name: 'MINECRAFT', image: minecraftImg },
-  { name: 'HYTALE', image: hytaleImg },
-  { name: 'PALWORLD', image: palworldImg },
-  { name: 'ENSHROUDED', image: enshroudedImg },
-  { name: 'PROJECT ZOMBOID', image: projectZomboidImg },
-  { name: 'TERRARIA', image: terrariaImg },
-  { name: 'VALHEIM', image: valheimImg },
-  { name: 'ARK: SURVIVAL', image: arkSurvivalImg },
-  { name: 'ARMA 3', image: arma3Img },
+  { name: 'MINECRAFT', image: minecraftImg, link: '/games/minecraft' },
+  { name: 'HYTALE', image: hytaleImg, link: '#' },
+  { name: 'PALWORLD', image: palworldImg, link: '#' },
+  { name: 'ENSHROUDED', image: enshroudedImg, link: '#' },
+  { name: 'PROJECT ZOMBOID', image: projectZomboidImg, link: '#' },
+  { name: 'TERRARIA', image: terrariaImg, link: '#' },
+  { name: 'VALHEIM', image: valheimImg, link: '#' },
+  { name: 'ARK: SURVIVAL', image: arkSurvivalImg, link: '#' },
+  { name: 'ARMA 3', image: arma3Img, link: '#' },
 ];
 
 const GameServers = () => {
@@ -32,8 +33,9 @@ const GameServers = () => {
         {/* Games Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {games.map((game, index) => (
-            <div 
+            <Link 
               key={game.name}
+              to={game.link}
               className="game-card animate-fade-up"
               style={{ animationDelay: `${index * 50}ms` }}
             >
@@ -47,7 +49,7 @@ const GameServers = () => {
               <div className="p-3 text-center border-t border-border">
                 <span className="text-xs font-semibold text-foreground">{game.name}</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
