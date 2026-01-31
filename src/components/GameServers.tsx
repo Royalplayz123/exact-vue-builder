@@ -11,7 +11,7 @@ import arma3Img from '@/assets/games/arma3.jpg';
 
 const games = [
   { name: 'MINECRAFT', image: minecraftImg, link: '/games/minecraft' },
-  { name: 'HYTALE', image: hytaleImg, link: '#' },
+  { name: 'HYTALE', image: hytaleImg, link: '/games/hytale' },
   { name: 'PALWORLD', image: palworldImg, link: '#' },
   { name: 'ENSHROUDED', image: enshroudedImg, link: '#' },
   { name: 'PROJECT ZOMBOID', image: projectZomboidImg, link: '#' },
