@@ -1,4 +1,4 @@
-import { Gamepad2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -12,9 +12,9 @@ const Footer = () => {
               <li><a href="#" className="footer-link text-sm">About Us</a></li>
               <li><a href="#" className="footer-link text-sm">FAQ</a></li>
               <li><a href="#" className="footer-link text-sm">Sitemap</a></li>
-              <li><a href="#" className="footer-link text-sm">Privacy Policy</a></li>
+              <li><Link to="/privacy-policy" className="footer-link text-sm">Privacy Policy</Link></li>
               <li><a href="#" className="footer-link text-sm">Terms of Service</a></li>
-              <li><a href="#" className="footer-link text-sm">Refund Policy</a></li>
+              <li><Link to="/refund-policy" className="footer-link text-sm">Refund Policy</Link></li>
             </ul>
           </div>
 
@@ -22,7 +22,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground text-sm mb-4">SERVICES</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="footer-link text-sm">Minecraft</a></li>
+              <li><Link to="/games/minecraft" className="footer-link text-sm">Minecraft</Link></li>
               <li><a href="#" className="footer-link text-sm">Game Servers</a></li>
               <li><a href="#" className="footer-link text-sm">VPS Servers</a></li>
               <li><a href="#" className="footer-link text-sm">Web Hosting</a></li>
@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#" className="footer-link text-sm">My Account</a></li>
               <li><a href="#" className="footer-link text-sm">Knowledgebase</a></li>
-              <li><a href="#" className="footer-link text-sm">Contact Us</a></li>
+              <li><Link to="/contact" className="footer-link text-sm">Contact Us</Link></li>
               <li><a href="#" className="footer-link text-sm">Tutorials</a></li>
             </ul>
           </div>
