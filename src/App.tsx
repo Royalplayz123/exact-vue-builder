@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import MinecraftPlans from "./pages/MinecraftPlans";
 import HytalePlans from "./pages/HytalePlans";
+import PalworldPlans from "./pages/PalworldPlans";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/games/minecraft" element={<MinecraftPlans />} />
           <Route path="/games/hytale" element={<HytalePlans />} />
+          <Route path="/games/palworld" element={<PalworldPlans />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
