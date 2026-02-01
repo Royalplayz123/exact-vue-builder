@@ -9,11 +9,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground text-sm mb-4">COMPANY</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="footer-link text-sm">About Us</a></li>
+              <li><Link to="/about" className="footer-link text-sm">About Us</Link></li>
               <li><a href="#" className="footer-link text-sm">FAQ</a></li>
               <li><a href="#" className="footer-link text-sm">Sitemap</a></li>
               <li><Link to="/privacy-policy" className="footer-link text-sm">Privacy Policy</Link></li>
-              <li><a href="#" className="footer-link text-sm">Terms of Service</a></li>
+              <li><Link to="/terms-of-service" className="footer-link text-sm">Terms of Service</Link></li>
               <li><Link to="/refund-policy" className="footer-link text-sm">Refund Policy</Link></li>
             </ul>
           </div>
@@ -37,7 +37,7 @@ const Footer = () => {
               <li><a href="#" className="footer-link text-sm">My Account</a></li>
               <li><a href="#" className="footer-link text-sm">Knowledgebase</a></li>
               <li><Link to="/contact" className="footer-link text-sm">Contact Us</Link></li>
-              <li><a href="#" className="footer-link text-sm">Tutorials</a></li>
+              <li><Link to="/tutorials" className="footer-link text-sm">Tutorials</Link></li>
             </ul>
           </div>
 
