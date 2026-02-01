@@ -10,6 +10,9 @@ import PalworldPlans from "./pages/PalworldPlans";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import Contact from "./pages/Contact";
+import TermsOfService from "./pages/TermsOfService";
+import About from "./pages/About";
+import Tutorials from "./pages/Tutorials";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +30,9 @@ const App = () => (
           <Route path="/games/palworld" element={<PalworldPlans />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tutorials" element={<Tutorials />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
