@@ -15,6 +15,11 @@ import About from "./pages/About";
 import Tutorials from "./pages/Tutorials";
 import DiscordBotHosting from "./pages/DiscordBotHosting";
 import WebHosting from "./pages/WebHosting";
+import FAQPage from "./pages/FAQ";
+import IntelPlatinumVPS from "./pages/IntelPlatinumVPS";
+import IntelXeonVPS from "./pages/IntelXeonVPS";
+import AMDRyzenVPS from "./pages/AMDRyzenVPS";
+import AMDEpycVPS from "./pages/AMDEpycVPS";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +43,11 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/discord-bot" element={<DiscordBotHosting />} />
           <Route path="/services/web-hosting" element={<WebHosting />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/vps/intel-platinum" element={<IntelPlatinumVPS />} />
+          <Route path="/vps/intel-xeon" element={<IntelXeonVPS />} />
+          <Route path="/vps/amd-ryzen" element={<AMDRyzenVPS />} />
+          <Route path="/vps/amd-epyc" element={<AMDEpycVPS />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -10,7 +10,7 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground text-sm mb-4">COMPANY</h4>
             <ul className="space-y-2">
               <li><Link to="/about" className="footer-link text-sm">About Us</Link></li>
-              <li><a href="#" className="footer-link text-sm">FAQ</a></li>
+              <li><Link to="/faq" className="footer-link text-sm">FAQ</Link></li>
               <li><a href="#" className="footer-link text-sm">Sitemap</a></li>
               <li><Link to="/privacy-policy" className="footer-link text-sm">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="footer-link text-sm">Terms of Service</Link></li>
@@ -23,10 +23,12 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground text-sm mb-4">SERVICES</h4>
             <ul className="space-y-2">
               <li><Link to="/games/minecraft" className="footer-link text-sm">Minecraft</Link></li>
-              <li><a href="#" className="footer-link text-sm">Game Servers</a></li>
-              <li><a href="#" className="footer-link text-sm">VPS Servers</a></li>
-              <li><a href="#" className="footer-link text-sm">Web Hosting</a></li>
-              <li><a href="#" className="footer-link text-sm">Discord Bot</a></li>
+              <li><Link to="/vps/intel-platinum" className="footer-link text-sm">Intel Platinum VPS</Link></li>
+              <li><Link to="/vps/intel-xeon" className="footer-link text-sm">Intel Xeon VPS</Link></li>
+              <li><Link to="/vps/amd-ryzen" className="footer-link text-sm">AMD Ryzen VPS</Link></li>
+              <li><Link to="/vps/amd-epyc" className="footer-link text-sm">AMD Epyc VPS</Link></li>
+              <li><Link to="/services/web-hosting" className="footer-link text-sm">Web Hosting</Link></li>
+              <li><Link to="/services/discord-bot" className="footer-link text-sm">Discord Bot</Link></li>
             </ul>
           </div>
 
