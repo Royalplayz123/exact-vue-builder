@@ -9,10 +9,10 @@ const menuItems = [
     title: 'Game Servers',
     icon: Gamepad2,
     items: [
-      { name: 'Minecraft Hosting', desc: 'Premium NVMe SSD Minecraft Servers' },
-      { name: 'Hytale Hosting', desc: 'Best Hytale Hosting' },
-      { name: 'Palworld Hosting', desc: 'Dedicated Palworld Server Hosting' },
-      { name: 'See All Game Servers', desc: 'Browse 50+ Supported Games' },
+      { name: 'Minecraft Hosting', desc: 'Premium NVMe SSD Minecraft Servers', link: '/games/minecraft' },
+      { name: 'Hytale Hosting', desc: 'Best Hytale Hosting', link: '/games/hytale' },
+      { name: 'Palworld Hosting', desc: 'Dedicated Palworld Server Hosting', link: '/games/palworld' },
+      { name: 'See All Game Servers', desc: 'Browse 50+ Supported Games', link: '#' },
     ]
   },
   {
@@ -22,15 +22,17 @@ const menuItems = [
       {
         label: 'HOSTING',
         items: [
-          { name: 'Web Hosting', desc: 'cPanel Hosting with Free Domain' },
-          { name: 'Discord Bot Hosting', desc: '24/7 Discord Bot Servers' },
+          { name: 'Web Hosting', desc: 'cPanel Hosting with Free Domain', link: '/services/web-hosting' },
+          { name: 'Discord Bot Hosting', desc: '24/7 Discord Bot Servers', link: '/services/discord-bot' },
         ]
       },
       {
         label: 'VPS',
         items: [
-          { name: 'Intel Platinum VPS', desc: 'Budget VPS in India' },
-          { name: 'AMD Ryzen VPS', desc: 'Premium Performance' },
+          { name: 'Intel Platinum VPS', desc: 'Budget VPS in India', link: '/vps/intel-platinum' },
+          { name: 'Intel Xeon VPS', desc: 'High Performance Intel Xeon', link: '/vps/intel-xeon' },
+          { name: 'AMD Ryzen VPS', desc: 'Premium Performance', link: '/vps/amd-ryzen' },
+          { name: 'AMD Epyc VPS', desc: 'Enterprise-grade Performance', link: '/vps/amd-epyc' },
         ]
       }
     ]
@@ -39,20 +41,20 @@ const menuItems = [
     title: 'Learn',
     icon: BookOpen,
     items: [
-      { name: 'About Our Company', desc: 'Our Story & Mission' },
-      { name: 'Terms of Service', desc: 'Our Terms & Conditions' },
-      { name: 'Privacy Policy', desc: 'How We Handle Your Data' },
-      { name: 'Refund Policy', desc: 'Our Refund Policy' },
+      { name: 'About Our Company', desc: 'Our Story & Mission', link: '/about' },
+      { name: 'Terms of Service', desc: 'Our Terms & Conditions', link: '/terms-of-service' },
+      { name: 'Privacy Policy', desc: 'How We Handle Your Data', link: '/privacy-policy' },
+      { name: 'Refund Policy', desc: 'Our Refund Policy', link: '/refund-policy' },
     ]
   },
   {
     title: 'Support',
     icon: HelpCircle,
     items: [
-      { name: 'Contact Support', desc: 'Get in Touch with Our Team' },
-      { name: 'FAQ & Knowledge Base', desc: 'Answers to Common Questions' },
-      { name: 'Tutorials & Guides', desc: 'Step-by-Step Setup Guides' },
-      { name: 'Server Status', desc: 'Check Our System Status' },
+      { name: 'Contact Support', desc: 'Get in Touch with Our Team', link: '/contact' },
+      { name: 'FAQ & Knowledge Base', desc: 'Answers to Common Questions', link: '/faq' },
+      { name: 'Tutorials & Guides', desc: 'Step-by-Step Setup Guides', link: '/tutorials' },
+      { name: 'Server Status', desc: 'Check Our System Status', link: '#' },
     ]
   }
 ];
@@ -163,14 +165,15 @@ const Header = () => {
                     </CollapsibleTrigger>
                     <CollapsibleContent className="pl-6 pr-2 py-2 space-y-1">
                       {menu.items && menu.items.map((item) => (
-                        <a 
+                        <Link 
                           key={item.name}
-                          href="#" 
+                          to={item.link || '#'} 
                           className="block p-2 rounded-lg hover:bg-secondary/30 transition-colors"
+                          onClick={() => setIsOpen(false)}
                         >
                           <div className="text-sm text-foreground">{item.name}</div>
                           <div className="text-xs text-muted-foreground">{item.desc}</div>
-                        </a>
+                        </Link>
                       ))}
                       {menu.categories && menu.categories.map((cat) => (
                         <div key={cat.label} className="mb-3">
@@ -179,14 +182,15 @@ const Header = () => {
                             {cat.label}
                           </div>
                           {cat.items.map((item) => (
-                            <a 
+                            <Link 
                               key={item.name}
-                              href="#" 
+                              to={item.link || '#'} 
                               className="block p-2 rounded-lg hover:bg-secondary/30 transition-colors"
+                              onClick={() => setIsOpen(false)}
                             >
                               <div className="text-sm text-foreground">{item.name}</div>
                               <div className="text-xs text-muted-foreground">{item.desc}</div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       ))}
