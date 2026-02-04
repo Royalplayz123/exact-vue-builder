@@ -6,20 +6,23 @@ const contactMethods = [
   {
     icon: Mail,
     title: 'EMAIL SUPPORT',
-    primary: 'help@codenest.com',
+    primary: 'solutioncodenest@gmail.com',
     secondary: 'Get a response within 24 hours.',
+    link: 'mailto:solutioncodenest@gmail.com',
   },
   {
     icon: MessageSquare,
     title: 'DISCORD COMMUNITY',
     primary: 'Join our Discord Server',
     secondary: 'For community support & discussion.',
+    link: 'https://discord.gg/R8U3wKxwkd',
   },
   {
     icon: TicketCheck,
     title: 'SUBMIT TICKET',
     primary: 'Create a support ticket',
     secondary: 'Official support channel for issues.',
+    link: 'https://support.codenestsolution.shop',
   },
 ];
 
@@ -32,7 +35,7 @@ const legalInfo = [
   {
     icon: Phone,
     label: 'TELEPHONE NO',
-    value: '9234521981, 9613354980',
+    value: '9258422159',
   },
   {
     icon: MapPin,
@@ -47,12 +50,12 @@ const legalInfo = [
   {
     icon: Mail,
     label: 'E-MAIL ID',
-    value: 'help@codenest.com',
+    value: 'solutioncodenest@gmail.com',
   },
   {
     icon: Clock,
     label: 'LAST UPDATED',
-    value: '17-09-2025 13:50:35',
+    value: '04-02-2026 12:00:00',
   },
 ];
 
@@ -75,9 +78,12 @@ const Contact = () => {
         {/* Contact Methods */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
           {contactMethods.map((method, index) => (
-            <div 
+            <a 
               key={method.title}
-              className="bg-card border border-border rounded-xl p-6 animate-fade-in hover:border-primary/50 transition-all duration-300 hover:scale-[1.02]"
+              href={method.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-card border border-border rounded-xl p-6 animate-fade-in hover:border-primary/50 transition-all duration-300 hover:scale-[1.02] block"
               style={{ animationDelay: `${(index + 1) * 100}ms` }}
             >
               <div className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center mb-4">
@@ -86,7 +92,7 @@ const Contact = () => {
               <h3 className="text-sm font-bold text-foreground mb-2">{method.title}</h3>
               <p className="text-primary text-sm mb-1">{method.primary}</p>
               <p className="text-muted-foreground text-xs">{method.secondary}</p>
-            </div>
+            </a>
           ))}
         </div>
 

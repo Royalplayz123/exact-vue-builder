@@ -36,7 +36,7 @@ const refundSections = [
     number: '4',
     title: 'SERVICE CANCELLATION',
     items: [
-      'Clients may cancel services by notifying us at least 3 days in advance via Email or Phone.',
+      'Clients may cancel services by notifying us at least 3 days in advance via Email (solutioncodenest@gmail.com) or Phone (9258422159).',
       'Cancellations with sufficient notice will receive a full refund (if eligible).',
       'Cancellations made less than 3 days before the service date may incur a 20% cancellation fee.',
     ],

@@ -46,7 +46,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground text-sm mb-4">SOCIAL</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="footer-link text-sm">Discord</a></li>
+              <li><a href="https://discord.gg/R8U3wKxwkd" target="_blank" rel="noopener noreferrer" className="footer-link text-sm">Discord</a></li>
               <li><a href="#" className="footer-link text-sm">YouTube</a></li>
               <li><a href="#" className="footer-link text-sm">LinkedIn</a></li>
             </ul>
