@@ -9,10 +9,10 @@ const menuItems = [
     title: 'Game Servers',
     icon: Gamepad2,
     items: [
+      { name: 'All Game Servers', desc: 'Browse 80+ Supported Games', link: '/games' },
       { name: 'Minecraft Hosting', desc: 'Premium NVMe SSD Minecraft Servers', link: '/games/minecraft' },
       { name: 'Hytale Hosting', desc: 'Best Hytale Hosting', link: '/games/hytale' },
       { name: 'Palworld Hosting', desc: 'Dedicated Palworld Server Hosting', link: '/games/palworld' },
-      { name: 'See All Game Servers', desc: 'Browse 50+ Supported Games', link: '#' },
     ]
   },
   {
@@ -24,6 +24,7 @@ const menuItems = [
         items: [
           { name: 'Web Hosting', desc: 'cPanel Hosting with Free Domain', link: '/services/web-hosting' },
           { name: 'Discord Bot Hosting', desc: '24/7 Discord Bot Servers', link: '/services/discord-bot' },
+          { name: 'RDP Plans', desc: 'Windows Remote Desktop Servers', link: '/services/rdp' },
         ]
       },
       {

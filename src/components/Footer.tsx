@@ -22,13 +22,12 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground text-sm mb-4">SERVICES</h4>
             <ul className="space-y-2">
+              <li><Link to="/games" className="footer-link text-sm">Game Servers</Link></li>
               <li><Link to="/games/minecraft" className="footer-link text-sm">Minecraft</Link></li>
-              <li><Link to="/vps/intel-platinum" className="footer-link text-sm">Intel Platinum VPS</Link></li>
-              <li><Link to="/vps/intel-xeon" className="footer-link text-sm">Intel Xeon VPS</Link></li>
-              <li><Link to="/vps/amd-ryzen" className="footer-link text-sm">AMD Ryzen VPS</Link></li>
-              <li><Link to="/vps/amd-epyc" className="footer-link text-sm">AMD Epyc VPS</Link></li>
+              <li><Link to="/vps/intel-platinum" className="footer-link text-sm">VPS Servers</Link></li>
               <li><Link to="/services/web-hosting" className="footer-link text-sm">Web Hosting</Link></li>
               <li><Link to="/services/discord-bot" className="footer-link text-sm">Discord Bot</Link></li>
+              <li><Link to="/services/rdp" className="footer-link text-sm">RDP Plans</Link></li>
             </ul>
           </div>
 
