@@ -20,6 +20,8 @@ import IntelPlatinumVPS from "./pages/IntelPlatinumVPS";
 import IntelXeonVPS from "./pages/IntelXeonVPS";
 import AMDRyzenVPS from "./pages/AMDRyzenVPS";
 import AMDEpycVPS from "./pages/AMDEpycVPS";
+import RDPPlans from "./pages/RDPPlans";
+import AllGames from "./pages/AllGames";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -43,7 +45,9 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/discord-bot" element={<DiscordBotHosting />} />
           <Route path="/services/web-hosting" element={<WebHosting />} />
+          <Route path="/services/rdp" element={<RDPPlans />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/games" element={<AllGames />} />
           <Route path="/vps/intel-platinum" element={<IntelPlatinumVPS />} />
           <Route path="/vps/intel-xeon" element={<IntelXeonVPS />} />
           <Route path="/vps/amd-ryzen" element={<AMDRyzenVPS />} />
