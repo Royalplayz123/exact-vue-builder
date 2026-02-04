@@ -61,7 +61,7 @@ const PrivacyPolicy = () => {
           <section className="animate-fade-in" style={{ animationDelay: '350ms' }}>
             <h2 className="text-lg font-bold text-primary mb-3">CONTACT US</h2>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              For privacy-related inquiries, please contact us at Discord.
+              For privacy-related inquiries, please contact us at <a href="mailto:solutioncodenest@gmail.com" className="text-primary hover:underline">solutioncodenest@gmail.com</a> or join our <a href="https://discord.gg/R8U3wKxwkd" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Discord community</a>.
             </p>
           </section>
 
