@@ -22,6 +22,7 @@ import AMDRyzenVPS from "./pages/AMDRyzenVPS";
 import AMDEpycVPS from "./pages/AMDEpycVPS";
 import RDPPlans from "./pages/RDPPlans";
 import AllGames from "./pages/AllGames";
+import Downloads from "./pages/Downloads";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/vps/intel-xeon" element={<IntelXeonVPS />} />
           <Route path="/vps/amd-ryzen" element={<AMDRyzenVPS />} />
           <Route path="/vps/amd-epyc" element={<AMDEpycVPS />} />
+          <Route path="/downloads" element={<Downloads />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
