@@ -24,6 +24,7 @@ import RDPPlans from "./pages/RDPPlans";
 import AllGames from "./pages/AllGames";
 import Downloads from "./pages/Downloads";
 import NotFound from "./pages/NotFound";
+import ChatbotButton from "./components/ChatbotButton";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <ChatbotButton />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
