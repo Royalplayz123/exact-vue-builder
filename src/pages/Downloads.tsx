@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Download, FileText, Image, Package, Music, Video, Archive } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -82,6 +83,12 @@ const downloadableFiles = [
 const categories = ["All", ...new Set(downloadableFiles.map(file => file.category))];
 
 const Downloads = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredFiles = selectedCategory === "All" 
+    ? downloadableFiles 
+    : downloadableFiles.filter(file => file.category === selectedCategory);
+
   const handleDownload = (url: string, title: string) => {
     const link = document.createElement('a');
     link.href = url;
@@ -124,7 +131,12 @@ const Downloads = () => {
               {categories.map((category) => (
                 <button
                   key={category}
-                  className="px-4 py-2 rounded-full border border-border bg-card hover:border-primary/50 hover:bg-secondary/50 transition-all duration-300 text-sm font-medium text-foreground"
+                  onClick={() => setSelectedCategory(category)}
+                  className={`px-4 py-2 rounded-full border transition-all duration-300 text-sm font-medium ${
+                    selectedCategory === category
+                      ? "border-primary bg-primary/20 text-primary"
+                      : "border-border bg-card hover:border-primary/50 hover:bg-secondary/50 text-foreground"
+                  }`}
                 >
                   {category}
                 </button>
@@ -137,7 +149,7 @@ const Downloads = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {downloadableFiles.map((file, index) => {
+              {filteredFiles.map((file, index) => {
                 const FileIcon = getFileIcon(file.fileType);
                 return (
                   <div
