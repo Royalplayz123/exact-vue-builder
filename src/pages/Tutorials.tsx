@@ -134,7 +134,7 @@ const Tutorials = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8 animate-fade-in">
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-foreground">
-                <span className="text-primary">Codenest</span> Tutorials
+                <span className="text-primary">Drip Nodes</span> Tutorials
               </h1>
             </div>
             
@@ -198,7 +198,7 @@ const Tutorials = () => {
                   🎬
                 </div>
                 <h2 className="text-lg font-bold text-foreground mb-2">
-                  WELCOME TO CODENEST TUTORIALS
+                  WELCOME TO DRIP NODES TUTORIALS
                 </h2>
                 <p className="text-muted-foreground text-sm">
                   Click on any tutorial below to watch it on YouTube. All videos open in a new tab.

@@ -105,8 +105,8 @@ const Header = () => {
             <Gamepad2 className="w-5 h-5 text-primary" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-foreground text-sm">CODENEST</span>
-            <span className="text-[10px] text-muted-foreground -mt-1">SOLUTION</span>
+            <span className="font-bold text-foreground text-sm">DRIP NODES</span>
+            <span className="text-[10px] text-muted-foreground -mt-1">HOSTING</span>
           </div>
         </Link>
 
@@ -213,7 +213,7 @@ const Header = () => {
               </div>
 
               <div className="mt-6 pt-4 border-t border-border text-center">
-                <p className="text-xs text-muted-foreground">© 2025 Codenest Solution</p>
+                <p className="text-xs text-muted-foreground">© 2025 Drip Nodes</p>
                 <p className="text-[10px] text-muted-foreground">Premium Game Server & VPS Hosting Solutions</p>
               </div>
             </SheetContent>

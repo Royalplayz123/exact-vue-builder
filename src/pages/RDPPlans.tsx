@@ -187,7 +187,7 @@ const RDPPlans = () => {
           <div className="container mx-auto">
             <h2 className="text-2xl font-bold text-center mb-10">
               <span className="text-foreground">Why Choose</span>{' '}
-              <span className="gradient-text-purple">Codenest RDP?</span>
+              <span className="gradient-text-purple">Drip Nodes RDP?</span>
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
