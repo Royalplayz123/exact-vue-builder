@@ -30,7 +30,7 @@ const legalInfo = [
   {
     icon: User,
     label: 'MERCHANT LEGAL ENTITY NAME',
-    value: 'CODENEST SOLUTION',
+    value: 'DRIP NODES',
   },
   {
     icon: Phone,

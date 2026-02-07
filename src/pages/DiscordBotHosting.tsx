@@ -67,7 +67,7 @@ const whyChooseFeatures = [
   {
     icon: MessageSquare,
     title: '24/7/365 SUPPORT',
-    description: 'Codenest Solution is by your side 24/7/365, days a year to aid with any queries you may have. Our support is the best in the industry, and we will never stop striving to be even better!'
+    description: 'Drip Nodes is by your side 24/7/365, days a year to aid with any queries you may have. Our support is the best in the industry, and we will never stop striving to be even better!'
   },
   {
     icon: Globe,
@@ -87,7 +87,7 @@ const whyChooseFeatures = [
   {
     icon: Bot,
     title: 'AUTOMATED BOT INSTALLATION',
-    description: 'From NodeJS (v16 version) and Python to Java or TypeScript, Codenest Solution has you covered no matter the bot type you wish to run. That includes our library of pre-made bots, complete with one-click install!'
+    description: 'From NodeJS (v16 version) and Python to Java or TypeScript, Drip Nodes has you covered no matter the bot type you wish to run. That includes our library of pre-made bots, complete with one-click install!'
   },
   {
     icon: Database,
@@ -167,7 +167,7 @@ const DiscordBotHosting = () => {
           
           {/* Description */}
           <p className="text-muted-foreground max-w-md mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
-            Get your Discord bot up and running in minutes with Codenest Solution! Our Discord bot hosting services come with full file access for complete customization and a library of pre-made bots ready to be installed with one-click as soon as your hosting goes live. Not to mention our free daily backups for complete peace of mind!
+            Get your Discord bot up and running in minutes with Drip Nodes! Our Discord bot hosting services come with full file access for complete customization and a library of pre-made bots ready to be installed with one-click as soon as your hosting goes live. Not to mention our free daily backups for complete peace of mind!
           </p>
           
           {/* CTA Button */}
@@ -271,7 +271,7 @@ const DiscordBotHosting = () => {
         <div className="container mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-10 animate-fade-in">
             <span className="text-foreground">WHY CHOOSE</span>{' '}
-            <span className="text-cyan-400">CODENEST SOLUTION</span>
+            <span className="text-cyan-400">DRIP NODES</span>
             <span className="text-foreground">?</span>
           </h2>
           
@@ -392,7 +392,7 @@ const DiscordBotHosting = () => {
               READY TO POWER YOUR BOT?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Join thousands of Discord communities hosting their bots with Codenest Solution. Full DDOs Migration, 24/7 support.
+              Join thousands of Discord communities hosting their bots with Drip Nodes. Full DDOs Migration, 24/7 support.
             </p>
             <button className="btn-secondary-gradient px-8 py-3 rounded-lg font-medium text-foreground flex items-center gap-2 mx-auto">
               <Sparkles className="w-4 h-4" />

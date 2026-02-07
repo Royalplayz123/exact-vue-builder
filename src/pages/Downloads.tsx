@@ -40,7 +40,7 @@ const downloadableFiles = [
   },
   {
     id: 3,
-    title: "Codenest Wallpaper Pack",
+    title: "Drip Nodes Wallpaper Pack",
     description: "High-quality wallpapers featuring our brand and gaming themes for desktop and mobile.",
     thumbnail: "/placeholder.svg",
     downloadUrl: "https://example.com/file3.zip",

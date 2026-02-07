@@ -17,7 +17,7 @@ const ChatbotButton = () => {
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-white">Codenest Support</h3>
+                  <h3 className="font-semibold text-white">Drip Nodes Support</h3>
                   <p className="text-xs text-white/80">We typically reply instantly</p>
                 </div>
               </div>
@@ -39,7 +39,7 @@ const ChatbotButton = () => {
                   </div>
                   <div className="bg-secondary/50 rounded-2xl rounded-tl-none p-3 max-w-[80%]">
                     <p className="text-sm text-foreground">
-                      👋 Hey there! Welcome to Codenest Solution. How can we help you today?
+                      👋 Hey there! Welcome to Drip Nodes. How can we help you today?
                     </p>
                   </div>
                 </div>

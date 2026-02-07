@@ -22,7 +22,7 @@ const Hero = () => {
           We've been providing Minecraft server hosting services, as well as server hosting for other 
           games since 2011. We support hosting for all Minecraft versions and are dedicated to ensuring 
           your experience is fully supported. For a reliable server that makes modding easy, go with 
-          Codenest Solution.
+          Drip Nodes.
         </p>
 
         {/* CTA Button */}
