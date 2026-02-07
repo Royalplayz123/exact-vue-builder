@@ -22,6 +22,7 @@ import AMDRyzenVPS from "./pages/AMDRyzenVPS";
 import AMDEpycVPS from "./pages/AMDEpycVPS";
 import RDPPlans from "./pages/RDPPlans";
 import AllGames from "./pages/AllGames";
+import EmailHosting from "./pages/EmailHosting";
 import Downloads from "./pages/Downloads";
 import NotFound from "./pages/NotFound";
 import ChatbotButton from "./components/ChatbotButton";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/services/discord-bot" element={<DiscordBotHosting />} />
           <Route path="/services/web-hosting" element={<WebHosting />} />
           <Route path="/services/rdp" element={<RDPPlans />} />
+          <Route path="/services/email-hosting" element={<EmailHosting />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/games" element={<AllGames />} />
           <Route path="/vps/intel-platinum" element={<IntelPlatinumVPS />} />
