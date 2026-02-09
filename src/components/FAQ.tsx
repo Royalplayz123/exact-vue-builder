@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const faqItems = [
   {
@@ -43,40 +44,41 @@ const FAQ = () => {
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto">
-        {/* Section Title */}
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-2">
-          FREQUENTLY ASKED QUESTIONS
-        </h2>
-        <p className="text-center text-muted-foreground text-sm mb-10">
-          Click on each question for the answer.
-        </p>
+        <ScrollReveal animation="fade-up">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-2">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+          <p className="text-center text-muted-foreground text-sm mb-10">
+            Click on each question for the answer.
+          </p>
+        </ScrollReveal>
 
-        {/* FAQ Items */}
         <div className="space-y-3 max-w-3xl mx-auto">
           {faqItems.map((item, index) => (
-            <Collapsible 
-              key={index}
-              open={openItems.includes(index)}
-              onOpenChange={() => toggleItem(index)}
-            >
-              <div className="faq-item">
-                <CollapsibleTrigger className="flex items-center justify-between w-full p-4 text-left">
-                  <span className="text-foreground text-sm font-medium pr-4">
-                    {item.question}
-                  </span>
-                  <ChevronDown 
-                    className={`w-5 h-5 text-muted-foreground transition-transform duration-200 flex-shrink-0 ${
-                      openItems.includes(index) ? 'rotate-180' : ''
-                    }`}
-                  />
-                </CollapsibleTrigger>
-                <CollapsibleContent>
-                  <div className="px-4 pb-4 text-muted-foreground text-sm leading-relaxed">
-                    {item.answer}
-                  </div>
-                </CollapsibleContent>
-              </div>
-            </Collapsible>
+            <ScrollReveal key={index} animation="fade-up" delay={index * 60}>
+              <Collapsible 
+                open={openItems.includes(index)}
+                onOpenChange={() => toggleItem(index)}
+              >
+                <div className="faq-item">
+                  <CollapsibleTrigger className="flex items-center justify-between w-full p-4 text-left">
+                    <span className="text-foreground text-sm font-medium pr-4">
+                      {item.question}
+                    </span>
+                    <ChevronDown 
+                      className={`w-5 h-5 text-muted-foreground transition-transform duration-200 flex-shrink-0 ${
+                        openItems.includes(index) ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <div className="px-4 pb-4 text-muted-foreground text-sm leading-relaxed">
+                      {item.answer}
+                    </div>
+                  </CollapsibleContent>
+                </div>
+              </Collapsible>
+            </ScrollReveal>
           ))}
         </div>
       </div>

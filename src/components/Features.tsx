@@ -1,4 +1,5 @@
 import { Users, Globe, Download, Shield, Zap, RefreshCw } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const features = [
   {
@@ -37,29 +38,27 @@ const Features = () => {
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto">
-        {/* Section Title */}
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
-          OUR FEATURES
-        </h2>
+        <ScrollReveal animation="fade-up">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
+            OUR FEATURES
+          </h2>
+        </ScrollReveal>
 
-        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {features.map((feature, index) => (
-            <div 
-              key={feature.title}
-              className="feature-card text-center animate-fade-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="icon-circle mx-auto mb-4">
-                <feature.icon className="w-6 h-6 text-foreground" />
+            <ScrollReveal key={feature.title} animation="fade-up" delay={index * 80}>
+              <div className="feature-card text-center">
+                <div className="icon-circle mx-auto mb-4">
+                  <feature.icon className="w-6 h-6 text-foreground" />
+                </div>
+                <h3 className="text-primary font-semibold text-sm mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="text-primary font-semibold text-sm mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
