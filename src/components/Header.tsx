@@ -25,6 +25,7 @@ const menuItems = [
           { name: 'Web Hosting', desc: 'cPanel Hosting with Free Domain', link: '/services/web-hosting' },
           { name: 'Email Hosting', desc: 'Professional Custom Domain Email', link: '/services/email-hosting' },
           { name: 'Discord Bot Hosting', desc: '24/7 Discord Bot Servers', link: '/services/discord-bot' },
+          { name: 'Cloud Storage', desc: 'Secure File Storage & Sharing', link: '/services/cloud-storage' },
           { name: 'RDP Plans', desc: 'Windows Remote Desktop Servers', link: '/services/rdp' },
         ]
       },
