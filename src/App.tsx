@@ -27,6 +27,7 @@ import CloudStoragePlans from "./pages/CloudStoragePlans";
 import Downloads from "./pages/Downloads";
 import NotFound from "./pages/NotFound";
 import ChatbotButton from "./components/ChatbotButton";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <AnimatedBackground />
       <ChatbotButton />
       <BrowserRouter>
         <Routes>

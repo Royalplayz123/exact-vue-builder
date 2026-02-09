@@ -122,6 +122,13 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
   }
+
+  /* Ensure all page content sits above animated background */
+  #root > div > div,
+  main {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 @layer components {
@@ -243,34 +250,18 @@
   }
 
   @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   @keyframes scaleIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
   }
 
   .delay-100 { animation-delay: 100ms; }
@@ -278,4 +269,121 @@
   .delay-300 { animation-delay: 300ms; }
   .delay-400 { animation-delay: 400ms; }
   .delay-500 { animation-delay: 500ms; }
+}
+
+/* ===== Animated Background System ===== */
+
+.animated-bg-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Gradient Orbs */
+.animated-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+}
+
+.orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, hsl(195 90% 60% / 0.4), transparent 70%);
+  top: -10%;
+  left: -10%;
+  animation: orbFloat1 20s ease-in-out infinite;
+}
+
+.orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, hsl(270 70% 60% / 0.35), transparent 70%);
+  bottom: -5%;
+  right: -10%;
+  animation: orbFloat2 25s ease-in-out infinite;
+}
+
+.orb-3 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, hsl(145 70% 50% / 0.25), transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbFloat3 18s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(80px, 60px) scale(1.1); }
+  66% { transform: translate(-40px, 80px) scale(0.95); }
+}
+
+@keyframes orbFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-60px, -40px) scale(1.05); }
+  66% { transform: translate(50px, -70px) scale(0.9); }
+}
+
+@keyframes orbFloat3 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-40%, -60%) scale(1.15); }
+}
+
+/* Animated Grid */
+.animated-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(hsl(195 90% 60% / 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(195 90% 60% / 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridShift 30s linear infinite;
+}
+
+@keyframes gridShift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(60px, 60px); }
+}
+
+/* Floating Particles */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: hsl(195 90% 60%);
+  opacity: 0;
+  animation: particleFloat 12s ease-in-out infinite;
+}
+
+.particle-1 { width: 4px; height: 4px; left: 10%; animation-delay: 0s; animation-duration: 14s; }
+.particle-2 { width: 3px; height: 3px; left: 25%; animation-delay: 2s; animation-duration: 11s; }
+.particle-3 { width: 5px; height: 5px; left: 45%; animation-delay: 4s; animation-duration: 16s; background: hsl(270 70% 60%); }
+.particle-4 { width: 3px; height: 3px; left: 65%; animation-delay: 1s; animation-duration: 13s; }
+.particle-5 { width: 4px; height: 4px; left: 80%; animation-delay: 3s; animation-duration: 15s; background: hsl(145 70% 50%); }
+.particle-6 { width: 3px; height: 3px; left: 90%; animation-delay: 5s; animation-duration: 12s; background: hsl(270 70% 60%); }
+
+@keyframes particleFloat {
+  0% { transform: translateY(100vh); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(-10vh); opacity: 0; }
+}
+
+/* Light mode adjustments */
+.light .animated-orb { opacity: 0.08; }
+.light .animated-grid {
+  background-image:
+    linear-gradient(hsl(195 90% 45% / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(195 90% 45% / 0.05) 1px, transparent 1px);
+}
+.light .particle { opacity: 0; animation-name: particleFloatLight; }
+@keyframes particleFloatLight {
+  0% { transform: translateY(100vh); opacity: 0; }
+  10% { opacity: 0.3; }
+  90% { opacity: 0.3; }
+  100% { transform: translateY(-10vh); opacity: 0; }
 }
