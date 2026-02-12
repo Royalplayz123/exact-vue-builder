@@ -133,20 +133,7 @@ const Header = () => {
             <SheetContent 
               className="w-[320px] bg-background border-l border-border overflow-y-auto top-[57px] h-[calc(100%-57px)]"
             >
-              <div className="flex items-center justify-end gap-2 mb-4 pr-8 pt-2">
-                <button 
-                  onClick={toggleTheme}
-                  className="p-2 rounded-lg hover:bg-secondary transition-colors"
-                >
-                  {isDark ? (
-                    <Moon className="w-4 h-4 text-muted-foreground" />
-                  ) : (
-                    <Sun className="w-4 h-4 text-muted-foreground" />
-                  )}
-                </button>
-              </div>
-
-              <nav className="space-y-2">
+              <nav className="space-y-2 pt-2">
                 {menuItems.map((menu) => (
                   <Collapsible 
                     key={menu.title}
