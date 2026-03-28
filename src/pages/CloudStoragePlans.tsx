@@ -99,7 +99,7 @@ const CloudStoragePlans = () => {
             Secure <span className="text-primary">Cloud Storage</span> Hosting
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in">
-            Store, share, and access your files from anywhere with Drip Nodes' blazing-fast and encrypted cloud storage solutions. Built for individuals and teams alike.
+            Store, share, and access your files from anywhere with CodeNest Solution' blazing-fast and encrypted cloud storage solutions. Built for individuals and teams alike.
           </p>
         </div>
       </section>
@@ -159,7 +159,7 @@ const CloudStoragePlans = () => {
       <section className="py-16 px-4 border-t border-border">
         <div className="container mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-10">
-            Why Choose <span className="text-primary">Drip Nodes</span> Cloud Storage?
+            Why Choose <span className="text-primary">CodeNest Solution</span> Cloud Storage?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((f, i) => (

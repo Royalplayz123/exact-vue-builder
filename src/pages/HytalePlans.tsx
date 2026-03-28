@@ -326,7 +326,7 @@ const HytalePlans = () => {
           </div>
           
           <h2 className="text-2xl md:text-3xl font-bold mb-4 animate-fade-in" style={{ animationDelay: '100ms' }}>
-            WHY CHOOSE <span className="text-primary">DRIP NODES?</span>
+            WHY CHOOSE <span className="text-primary">CODENEST SOLUTION?</span>
           </h2>
           <p className="text-muted-foreground text-sm mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: '150ms' }}>
             Experience enterprise-grade hosting with gaming-optimized performance. Our platform is built specifically for HYTALE's demanding requirements.
@@ -356,7 +356,7 @@ const HytalePlans = () => {
               READY TO START YOUR HYTALE JOURNEY?
             </h2>
             <p className="text-muted-foreground text-sm mb-6">
-              Join thousands of players hosting their HYTALE servers with Drip Nodes. Instant setup, 24/7 support.
+              Join thousands of players hosting their HYTALE servers with CodeNest Solution. Instant setup, 24/7 support.
             </p>
             <a href="#plans">
               <Button 

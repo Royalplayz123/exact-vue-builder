@@ -52,7 +52,7 @@ const About = () => {
   const journey = [
     {
       year: '2023',
-      title: 'DRIP NODES FOUNDED',
+      title: 'CODENEST SOLUTION FOUNDED',
       description: 'Started with a vision to revolutionize game server hosting',
       position: 'left'
     },
@@ -79,7 +79,7 @@ const About = () => {
   const testimonials = [
     {
       stars: 5,
-      text: "I've been using Drip Nodes for a while, and I'm really impressed with their service. They provide very powerful VPS and reliable cPanel hosting at great prices. The performance is excellent — fast, stable, and smooth — and the support team is always helpful whenever I need assistance.",
+      text: "I've been using CodeNest Solution for a while, and I'm really impressed with their service. They provide very powerful VPS and reliable cPanel hosting at great prices. The performance is excellent — fast, stable, and smooth — and the support team is always helpful whenever I need assistance.",
       author: 'NOT SG PLAYZ',
       role: 'FurrowHost Owner'
     },
@@ -119,11 +119,11 @@ const About = () => {
                   ABOUT
                 </h1>
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                  DRIP NODES
+                  CODENEST SOLUTION
                 </h2>
                 
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  At <span className="text-primary font-semibold">Drip Nodes</span>, we are dedicated to delivering exceptional server hosting solutions tailored to the diverse needs of gamers, content creators, developers, and studios. Established in 2023, our journey began with a passion for Minecraft and a commitment to revolutionize the hosting experience.
+                  At <span className="text-primary font-semibold">CodeNest Solution</span>, we are dedicated to delivering exceptional server hosting solutions tailored to the diverse needs of gamers, content creators, developers, and studios. Established in 2023, our journey began with a passion for Minecraft and a commitment to revolutionize the hosting experience.
                 </p>
                 
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -204,7 +204,7 @@ const About = () => {
                 MEET THE TEAM
               </h2>
               <p className="text-muted-foreground text-sm max-w-xl mx-auto">
-                The passionate individuals behind Drip Nodes' success, dedicated to delivering exceptional hosting experiences.
+                The passionate individuals behind CodeNest Solution' success, dedicated to delivering exceptional hosting experiences.
               </p>
             </div>
 
@@ -286,7 +286,7 @@ const About = () => {
                 WHAT OUR <span className="text-primary">CUSTOMERS SAY</span>
               </h2>
               <p className="text-muted-foreground text-sm">
-                Join 3,000+ satisfied gamers who trust Drip Nodes
+                Join 3,000+ satisfied gamers who trust CodeNest Solution
               </p>
             </div>
 
@@ -322,7 +322,7 @@ const About = () => {
               READY TO GET STARTED?
             </h2>
             <p className="text-muted-foreground text-sm mb-8 max-w-xl mx-auto">
-              Join thousands of gamers who have already experienced the Drip Nodes difference. Start your server in minutes.
+              Join thousands of gamers who have already experienced the CodeNest Solution difference. Start your server in minutes.
             </p>
             <button className="btn-primary-gradient px-8 py-3 rounded-lg font-semibold text-foreground">
               Get Started Today

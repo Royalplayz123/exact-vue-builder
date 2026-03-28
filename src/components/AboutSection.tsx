@@ -41,7 +41,7 @@ const AboutSection = () => {
 
         <ScrollReveal animation="fade-up">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
-            WHY DRIP NODES?
+            WHY CODENEST SOLUTION?
           </h2>
         </ScrollReveal>
 
@@ -94,7 +94,7 @@ const AboutSection = () => {
               TRUSTED HOST, MINECRAFT COMMUNITY APPROVED
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Hundreds of members of the Minecraft community trust Drip Nodes to be their Minecraft server host—including some of the biggest modpack developers and content creators out there.
+              Hundreds of members of the Minecraft community trust CodeNest Solution to be their Minecraft server host—including some of the biggest modpack developers and content creators out there.
             </p>
           </div>
         </ScrollReveal>
