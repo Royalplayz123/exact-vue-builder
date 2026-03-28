@@ -22,6 +22,14 @@ import AMDRyzenVPS from "./pages/AMDRyzenVPS";
 import AMDEpycVPS from "./pages/AMDEpycVPS";
 import RDPPlans from "./pages/RDPPlans";
 import AllGames from "./pages/AllGames";
+import EnshroudedPlans from "./pages/EnshroudedPlans";
+import ProjectZomboidPlans from "./pages/ProjectZomboidPlans";
+import TerrariaPlans from "./pages/TerrariaPlans";
+import ValheimPlans from "./pages/ValheimPlans";
+import SevenDaysToDiePlans from "./pages/SevenDaysToDiePlans";
+import ArkSurvivalPlans from "./pages/ArkSurvivalPlans";
+import SatisfactoryPlans from "./pages/SatisfactoryPlans";
+import Arma3Plans from "./pages/Arma3Plans";
 import EmailHosting from "./pages/EmailHosting";
 import CloudStoragePlans from "./pages/CloudStoragePlans";
 import Downloads from "./pages/Downloads";
@@ -57,6 +65,14 @@ const App = () => (
           <Route path="/services/cloud-storage" element={<CloudStoragePlans />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/games" element={<AllGames />} />
+          <Route path="/games/enshrouded" element={<EnshroudedPlans />} />
+          <Route path="/games/project-zomboid" element={<ProjectZomboidPlans />} />
+          <Route path="/games/terraria" element={<TerrariaPlans />} />
+          <Route path="/games/valheim" element={<ValheimPlans />} />
+          <Route path="/games/7-days-to-die" element={<SevenDaysToDiePlans />} />
+          <Route path="/games/ark-survival" element={<ArkSurvivalPlans />} />
+          <Route path="/games/satisfactory" element={<SatisfactoryPlans />} />
+          <Route path="/games/arma-3" element={<Arma3Plans />} />
           <Route path="/vps/intel-platinum" element={<IntelPlatinumVPS />} />
           <Route path="/vps/intel-xeon" element={<IntelXeonVPS />} />
           <Route path="/vps/amd-ryzen" element={<AMDRyzenVPS />} />
