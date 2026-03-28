@@ -65,6 +65,14 @@ const App = () => (
           <Route path="/services/cloud-storage" element={<CloudStoragePlans />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/games" element={<AllGames />} />
+          <Route path="/games/enshrouded" element={<EnshroudedPlans />} />
+          <Route path="/games/project-zomboid" element={<ProjectZomboidPlans />} />
+          <Route path="/games/terraria" element={<TerrariaPlans />} />
+          <Route path="/games/valheim" element={<ValheimPlans />} />
+          <Route path="/games/7-days-to-die" element={<SevenDaysToDiePlans />} />
+          <Route path="/games/ark-survival" element={<ArkSurvivalPlans />} />
+          <Route path="/games/satisfactory" element={<SatisfactoryPlans />} />
+          <Route path="/games/arma-3" element={<Arma3Plans />} />
           <Route path="/vps/intel-platinum" element={<IntelPlatinumVPS />} />
           <Route path="/vps/intel-xeon" element={<IntelXeonVPS />} />
           <Route path="/vps/amd-ryzen" element={<AMDRyzenVPS />} />
