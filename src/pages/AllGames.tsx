@@ -17,14 +17,14 @@ const games = [
   { name: 'MINECRAFT', image: minecraftImg, link: '/games/minecraft', price: '₹49', category: 'Sandbox', slots: 'Unlimited' },
   { name: 'HYTALE', image: hytaleImg, link: '/games/hytale', price: '₹99', category: 'Survival', slots: 'Unlimited' },
   { name: 'PALWORLD', image: palworldImg, link: '/games/palworld', price: '₹699', category: 'Survival', slots: '32' },
-  { name: 'ENSHROUDED', image: enshroudedImg, link: '#', price: '₹299', category: 'RPG', slots: '16' },
-  { name: 'PROJECT ZOMBOID', image: projectZomboidImg, link: '#', price: '₹199', category: 'Survival', slots: '64' },
-  { name: 'TERRARIA', image: terrariaImg, link: '#', price: '₹149', category: 'Sandbox', slots: '16' },
-  { name: 'VALHEIM', image: valheimImg, link: '#', price: '₹249', category: 'Survival', slots: '10' },
-  { name: '7 DAYS TO DIE', image: arkSurvivalImg, link: '#', price: '₹299', category: 'Survival', slots: '12' },
-  { name: 'ARK: SURVIVAL', image: arkSurvivalImg, link: '#', price: '₹399', category: 'Survival', slots: '70' },
-  { name: 'SATISFACTORY', image: terrariaImg, link: '#', price: '₹249', category: 'Simulation', slots: '4' },
-  { name: 'ARMA 3', image: arma3Img, link: '#', price: '₹349', category: 'Military', slots: '80' },
+  { name: 'ENSHROUDED', image: enshroudedImg, link: '/games/enshrouded', price: '₹299', category: 'RPG', slots: '16' },
+  { name: 'PROJECT ZOMBOID', image: projectZomboidImg, link: '/games/project-zomboid', price: '₹199', category: 'Survival', slots: '64' },
+  { name: 'TERRARIA', image: terrariaImg, link: '/games/terraria', price: '₹149', category: 'Sandbox', slots: '16' },
+  { name: 'VALHEIM', image: valheimImg, link: '/games/valheim', price: '₹249', category: 'Survival', slots: '10' },
+  { name: '7 DAYS TO DIE', image: arkSurvivalImg, link: '/games/7-days-to-die', price: '₹299', category: 'Survival', slots: '12' },
+  { name: 'ARK: SURVIVAL', image: arkSurvivalImg, link: '/games/ark-survival', price: '₹399', category: 'Survival', slots: '70' },
+  { name: 'SATISFACTORY', image: terrariaImg, link: '/games/satisfactory', price: '₹249', category: 'Simulation', slots: '4' },
+  { name: 'ARMA 3', image: arma3Img, link: '/games/arma-3', price: '₹349', category: 'Military', slots: '80' },
 ];
 
 const hostingSolutions = [
