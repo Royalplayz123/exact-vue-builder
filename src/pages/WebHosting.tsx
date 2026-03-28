@@ -529,7 +529,7 @@ const WebHosting = () => {
               READY TO GET STARTED?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Join thousands of satisfied customers who trust Drip Nodes for their hosting needs.
+              Join thousands of satisfied customers who trust CodeNest Solution for their hosting needs.
             </p>
             <div className="flex gap-3 justify-center">
               <button 

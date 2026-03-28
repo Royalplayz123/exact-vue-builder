@@ -9,7 +9,7 @@ const faqItems = [
     answer: 'Our average support ticket reply time is under 15 minutes. We have a dedicated team available 24/7/365 to help you with any issues you may encounter.',
   },
   {
-    question: 'WHAT ARE THE SPECIFICATIONS OF DRIP NODES SERVER NODES?',
+    question: 'WHAT ARE THE SPECIFICATIONS OF CODENEST SOLUTION SERVER NODES?',
     answer: 'Our servers use high-performance Intel Platinum and AMD Ryzen processors, NVMe SSDs for fast storage, and enterprise-grade networking for low latency gameplay.',
   },
   {

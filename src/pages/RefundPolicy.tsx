@@ -8,7 +8,7 @@ const refundSections = [
     items: [
       'Refunds are only applicable to first-time purchases of eligible products and services.',
       'Refund requests must be submitted within 2 days of the original purchase date.',
-      "Shared Hosting refunds are only granted if a valid technical issue is confirmed on Drip Nodes' side.",
+      "Shared Hosting refunds are only granted if a valid technical issue is confirmed on CodeNest Solution' side.",
       'VPS Hosting is strictly non-refundable under any circumstances.',
       'No refunds will be issued after 2 days, regardless of the situation.',
       'Refunds are not available for change-of-mind cases or user-side misconfiguration.',
@@ -56,7 +56,7 @@ const refundSections = [
     items: [
       'Approved refunds will be processed within 5-10 business days.',
       'Refunds are always returned to the original payment method.',
-      'Drip Nodes is not responsible for delays caused by your payment provider or bank.',
+      'CodeNest Solution is not responsible for delays caused by your payment provider or bank.',
     ],
   },
   {

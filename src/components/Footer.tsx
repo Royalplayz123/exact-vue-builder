@@ -80,7 +80,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-center text-muted-foreground text-xs">
-            Copyright 2025 © Drip Nodes. All rights reserved.
+            Copyright 2025 © CodeNest Solution. All rights reserved.
           </p>
         </div>
       </div>

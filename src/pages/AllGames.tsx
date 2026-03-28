@@ -44,9 +44,9 @@ const whyChooseFeatures = [
 ];
 
 const supportFeatures = [
-  { icon: MessageCircle, title: '24/7/365 SUPPORT', desc: 'At Drip Nodes, we offer 24/7/365 support through our live chat and ticket services. Get help instantly from our chat or submit a ticket with any questions or concerns you may have, and get answers in an average 15 minutes.' },
-  { icon: Users, title: 'EXPERIENCED STAFF', desc: 'Drip Nodes has been building and playing on game servers for many years. Our team of professionals are experts in game server hosting and are always ready to help!' },
-  { icon: Sparkles, title: 'PERSONALIZED SUPPORT', desc: 'At Drip Nodes, we skip the automated messages and chatbots to connect you right to a server hosting expert. Get personalized help for your specific setup and requirements.' },
+  { icon: MessageCircle, title: '24/7/365 SUPPORT', desc: 'At CodeNest Solution, we offer 24/7/365 support through our live chat and ticket services. Get help instantly from our chat or submit a ticket with any questions or concerns you may have, and get answers in an average 15 minutes.' },
+  { icon: Users, title: 'EXPERIENCED STAFF', desc: 'CodeNest Solution has been building and playing on game servers for many years. Our team of professionals are experts in game server hosting and are always ready to help!' },
+  { icon: Sparkles, title: 'PERSONALIZED SUPPORT', desc: 'At CodeNest Solution, we skip the automated messages and chatbots to connect you right to a server hosting expert. Get personalized help for your specific setup and requirements.' },
 ];
 
 const AllGames = () => {
@@ -192,7 +192,7 @@ const AllGames = () => {
           <div className="container mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
               <span className="text-foreground">WHY CHOOSE</span>{' '}
-              <span className="gradient-text-purple">DRIP NODES</span>
+              <span className="gradient-text-purple">CODENEST SOLUTION</span>
               <span className="text-foreground">?</span>
             </h2>
             
@@ -232,7 +232,7 @@ const AllGames = () => {
                   <span className="gradient-text-purple">ANYWHERE</span>
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  With a Drip Nodes server, play your game however you want, wherever you want, with whoever you want, thanks to our crossplay support. Stick to your platform of choice to keep things comfortable while customizing the experience to your needs.
+                  With a CodeNest Solution server, play your game however you want, wherever you want, with whoever you want, thanks to our crossplay support. Stick to your platform of choice to keep things comfortable while customizing the experience to your needs.
                 </p>
                 <div className="grid grid-cols-2 gap-3">
                   {['PC', 'XBOX', 'PlayStation', 'Mobile'].map((platform) => (
@@ -320,7 +320,7 @@ const AllGames = () => {
                 READY TO START GAMING?
               </h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-                Join thousands of gamers hosting their servers with Drip Nodes. Instant setup, 24/7 support.
+                Join thousands of gamers hosting their servers with CodeNest Solution. Instant setup, 24/7 support.
               </p>
               <button className="btn-primary-gradient px-8 py-3 rounded-lg font-medium text-foreground inline-flex items-center gap-2">
                 <Zap className="w-5 h-5" />
